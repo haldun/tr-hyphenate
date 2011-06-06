@@ -1,0 +1,22 @@
+# Turkish hyphenation code.
+
+## Usage
+
+    CL-USER> (tr.gen.hb.hecele:hyphenate "turk")
+    ("turk")
+    CL-USER> (tr.gen.hb.hecele:hyphenate "trabzon")
+    ("trab" "zon")
+    CL-USER> (tr.gen.hb.hecele:hyphenate "kramp")
+    ("kramp")
+    CL-USER> (tr.gen.hb.hecele:hyphenate "iyi")
+    ("i" "yi")
+    CL-USER> (tr.gen.hb.hecele:hyphenate
+    "çekoslavakyalılaştıramadıklarımızdanmısınız")
+    ("çe" "kos" "la" "vak" "ya" "lı" "laş" "tı" "ra" "ma" "dık" "la" "rı" "mız"
+    "dan" "mı" "sı" "nız")
+    CL-USER> (tr.gen.hb.hecele:hyphenate "Hâldun")
+    ("Hâl" "dun")
+    CL-USER> (tr.gen.hb.hecele:hyphenate "trabzandan kayilmaz")
+    ("trab" "zan" "dan " "ka" "yil" "maz")
+    CL-USER> (tr.gen.hb.hecele:hyphenate "Slovakya")
+    ("Slo" "vak" "ya")
